@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", "Times", sans-serif;
+ }
+ 
+ body{
+  background-color: #E4CDA7;
+ }
+ 
+ form{
+  margin: auto;
+  width: 500px;
+  background: #FEBE8C;
+  border-radius: 5px;
+  border:.2px solid white;
+ }
+ 
+ fieldset{
+  padding: 10px;
+ }
+ 
+ label{
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+ }
+ 
+ fieldset{
+  font-weight: bold;
+ }
+ 
+ 
+
+ 
+ select{
+  padding: 2px;
+  margin-bottom: 10px;
+ }
+ 
+ h4{
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: #FFE6BC;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  width: 100%;
+  border:.2px solid white;
+ }
+ 
+ .button{
+  display: inline-block;
+  padding:.8rem 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: .5rem;
+  background-color: #82CD47;
+  margin-top: 4px;
+  border:.2rem solid whitesmoke;
+}
+
+.buton{
+  background-color: #cdc557f0;
+  display: inline-block;
+  padding:.8rem 20px;
+  border:.2rem solid whitesmoke;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-left: 10px;
+}
+
+.buton::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background: whitesmoke;
+  transition: .3s linear;
+  z-index: -1;
+}
+
+.buton:hover::before{
+  width:100%;
+  left: 0;
+}
+
+.buton:hover{
+  color:#100F0F ;
+}
+
+
+
+

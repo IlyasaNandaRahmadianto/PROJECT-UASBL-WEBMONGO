@@ -1,0 +1,251 @@
+body{
+  background: #E4CDA7;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.home .content{
+  flex:1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content p:hover{
+  color: white;
+}
+
+.home .image{
+  flex:1 1 20rem;
+}
+
+.home .image img{
+  width:100%;
+  padding:1rem;
+  animation:float 4s linear infinite;
+}
+
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
+}
+
+.home .content h3{
+  font-size: 3.5rem;
+  color: black;
+  font-family: 'comic sans ms';
+  margin-left: 2rem;
+}
+
+.home .content p{
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 2rem;
+}
+
+.btn{
+  background-color: #cdc557f0;
+  display: inline-block;
+  padding:.8rem 2rem;
+  border:.2rem solid whitesmoke;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top:0; right: 0;
+  width:0%;
+  height:100%;
+  background: whitesmoke;
+  transition: .3s linear;
+  z-index: -1;
+}
+
+.btn:hover::before{
+  width:100%;
+  left: 0;
+}
+
+.btn:hover{
+  color:#100F0F ;
+}
+.logoku {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #E3CAA5;
+  }
+
+  header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #FFE6BC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    padding: 1% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  header .navbar ul{
+    list-style: none;
+  }
+
+  header .navbar ul li{
+    position: relative;
+    float: left;
+  }
+
+  header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    display: block;
+  }
+
+  header .navbar ul li a:hover{
+    background:  #E3CAA5;
+    border-radius: 10px;
+    transition: all ease-in-out .25s;
+    color: whitesmoke;
+  }
+
+  #menu-bar{
+    display: none;
+  }
+
+  header label{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media(max-width:991px){
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #FFE6BC;
+        border-top: 1px solid rgba(0, 0, 0, 1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+  }
+  
+  .logoku {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #E3CAA5;
+  }
+
+  header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #FFE6BC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    padding: 1% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  header .navbar ul{
+    list-style: none;
+  }
+
+  header .navbar ul li{
+    position: relative;
+    float: left;
+  }
+
+  header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    display: block;
+  }
+
+  header .navbar ul li a:hover{
+    background:  #E3CAA5;
+    border-radius: 10px;
+    transition: all ease-in-out .25s;
+    color: whitesmoke;
+  }
+
+  #menu-bar{
+    display: none;
+  }
+
+  header label{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media(max-width:991px){
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #FFE6BC;
+        border-top: 1px solid rgba(0, 0, 0, 1);
+        display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+  }

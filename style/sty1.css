@@ -1,0 +1,25 @@
+table{
+    font-size: 20px;
+    width: 50%;
+    background-color: white;  
+}
+button{
+    padding: 14px 20px;
+    background-color: green;
+    color:white;
+    font-size: 20px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+#delete{
+    background-color: red;
+}
+#delete:hover{
+    background-color: white;
+    color: black;
+}
+form{
+    display: flexbox;
+}
